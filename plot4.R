@@ -23,7 +23,7 @@ legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
        col = c("black", "red", "blue"), lty = c(1, 1, 1), bty = 'n')
 
 # plot BR - Global Reactive Power
-with(data, plot(DateTime, Global_reactive_power, xlab="datetime", ylab="Global Reactive Power", pch=NA))
+with(data, plot(DateTime, Global_reactive_power, xlab="datetime", pch=NA))
 with(data, lines(DateTime, Global_reactive_power))
 
 dev.off()
